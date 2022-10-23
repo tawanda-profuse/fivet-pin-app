@@ -99,7 +99,12 @@
      filter: brightness(90%);
      transform: scale(0.8);
   }
-  
+  .user_message{
+    text-align: center;
+    color: green;
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
   /* Mobile responsiveness */
   @media screen and (max-width: 750px) {
     .add-new-btn {

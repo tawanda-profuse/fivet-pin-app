@@ -1,16 +1,18 @@
+<h2 class="page-header">Page 2</h2>
 <div class="add-new-btn" id="open-form" title="New form">
     <i class="fa fa-plus"></i>
   </div>
   <div class="close-new-btn hide" id="close-form" title="Close form">
     <i class="fa fa-times"></i>
   </div>
+  <div class="user_message" id="userMessage"></div>
   <div class="new-item hide" id="new-form">
     <h2 class="page-header">New Item</h2>
     <form action="/page-2" method="POST">
       <div class="form-row">
         <div class="form-item">
           <label>Item Name</label>
-          <input type="text" name="item_name" value="<%= items.item_name %>">
+          <input type="text" name="item_name" value="<%= items.item_name %> "id="itemName">
         </div>
       </div>
       <div class="form-row">
@@ -37,7 +39,6 @@
     </form>
   </div>
   <section id="page2">
-    <h2 class="page-header">Page 2</h2>
     <% bookCoverClass = locals.large ? 'book-cover-large' : '' %>
     <% bookGridClass = locals.large ? 'book-grid-large' : '' %>
     <div class="book-grid <%= bookGridClass %>">

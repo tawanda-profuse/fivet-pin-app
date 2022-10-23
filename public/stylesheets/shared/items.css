@@ -43,8 +43,10 @@
     top: 20px;
     left: 50px;
   }
-  .book-grid i, button, form:hover{
+  .book-grid button:hover{
     cursor: pointer;
+    transform: scale(1.2);
+    border-bottom: 1px solid black;
   }
   .book-grid :hover:not(i, button, form, p){
     transform: scale(0.9);

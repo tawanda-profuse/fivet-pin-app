@@ -13,17 +13,17 @@ This application makes use of several components which combine to make an integr
 - MongoDB - for storing value fields **(npm install mongoose)**.
 - Express (server) - manages routing and page navigation.
 - HTML - defines the elements to be laid out.
-- EJS - Very useful for creating templates **(npm install ejs)**.
+- EJS - Very useful for creating UI templates **(npm install ejs)**.
 - CSS - Further defines layout and controls margins, colors, and positioning.
-- JavaScript - takes care of application logic.
+- JavaScript - takes care of application backend logic.
 
 ## Future Goals
 
-I look forward to re-building this app using the React front end library and possibly extend the functionality.
+I look forward to re-building this app using the React front end library and possibly extending the functionality.
 
 ## Accessibility
 
-This application is hosted on Heroku as a Node.js dyno with GitHub continuous deployment. It is available [here]().
+This application is hosted on Heroku as a Node.js dyno with GitHub continuous deployment enabled. It is available [here]().
 
 ## Tests
 
