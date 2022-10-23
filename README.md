@@ -2,9 +2,9 @@
 
 This apps main purpose is to maintain user data on a dashboard. The user can add items to the dashboard and ideally unpin them. The data entered by a user remains consistent until further changed. The database in use stores the following fields:
 
-- `**item_name**`
-- `**page_name**`
-- `**color**`
+- **item_name**
+- **page_name**
+- **color**
 
 ## Tools
 
