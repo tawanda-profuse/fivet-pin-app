@@ -1,0 +1,53 @@
+<div class="add-new-btn" id="open-form" title="New form">
+  <i class="fa fa-plus"></i>
+</div>
+<div class="close-new-btn hide" id="close-form" title="Close form">
+  <i class="fa fa-times"></i>
+</div>
+<div class="new-item hide" id="new-form">
+  <h2 class="page-header">New Item</h2>
+  <form action="/page-1" method="POST">
+    <div class="form-row">
+      <div class="form-item">
+        <label>Item Name</label>
+        <input type="text" name="item_name" value="<%= items.item_name %>">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-item">
+        <label>Page</label>
+        <input type="text" name="page_name" value="<%= items.page_name %>">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-item">
+        <label>Color Preference</label>
+        <input type="color" name="color" value="<%= items.color %> " title="Click to pick a color">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-item">
+        <label class="inform">Creating this item will pin it to the dashboard</label>
+      </div>
+    </div>
+    <div class="form-row form-row-end btn-row">
+      <a class="btn btn-danger" href="/page-1/items">Cancel</a>
+      <button class="btn btn-primary" id="pushDb" type="submit">Add</button>
+    </div>
+  </form>
+</div>
+<section id="page1">
+  <h2 class="page-header">Page 1</h2>
+  <% bookCoverClass = locals.large ? 'book-cover-large' : '' %>
+  <% bookGridClass = locals.large ? 'book-grid-large' : '' %>
+  <div class="book-grid <%= bookGridClass %>">
+  <% items.forEach(item => { %>
+    <div class="page-item" style='background-color: <%=item.color%>'>
+      <form action="/page-1/<%= item.id %>?_method=DELETE" method="POST">
+        <button type="submit" title="Delete from this page"><i class="fa fa-trash"></i></button>
+      </form>
+      <p><%= item.item_name %></p>
+   </div>
+  <% }) %>
+</div>
+</section>

@@ -1,0 +1,57 @@
+:root {
+    --book-cover-width: 200px;
+    --book-cover-width-large: 325px;
+    --book-cover-aspect-ratio: 0.75;
+  }
+  
+  .book-cover {
+    width: var(--book-cover-width);
+    height: calc(var(--book-cover-width) / var(--book-cover-aspect-ratio));
+  }
+  .book-cover-large {
+    --book-cover-width: var(--book-cover-width-large);
+  }
+  
+  .book-grid {
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, var(--book-cover-width));
+  }
+  .book-grid .page-item {
+    border: 1px solid none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+    width: 200px;
+    height: 250px;
+  }
+  .book-grid .page-item button{
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    top: 20px;
+    color: black;
+    background: transparent;
+    border: transparent;
+    left: 50px;
+    font-size: 1.2rem;
+  }
+  .book-grid .page-item p{
+    color: black;
+    position: relative;
+    margin-top: 30px;
+    top: 20px;
+    left: 50px;
+  }
+  .book-grid i, button, form:hover{
+    cursor: pointer;
+  }
+  .book-grid :hover:not(i, button, form, p){
+    transform: scale(0.9);
+    transition: ease-in-out .2s;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px black;
+  }
+  .book-grid-large {
+    grid-template-columns: repeat(auto-fill, var(--book-cover-width-large));
+  }

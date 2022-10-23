@@ -1,0 +1,127 @@
+.btn {
+    border: 1px solid none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Gotham Rounded';
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .btn-row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .btn-row > * {
+    margin-left: 1rem;
+  }
+  
+  .btn-row > *:first-child {
+    margin-left: 0;
+  }
+  
+  .btn-primary {
+    color: white;
+    background-color: green;
+  }
+  
+  .btn-primary:hover {
+    background-color: lightgreen;
+  }
+  
+  .btn-danger {
+    color: white;
+    background-color: tomato;
+  }
+  
+  .btn-danger:hover {
+    color: color;
+    background-color: crimson;
+  }
+  /* Styles for the add new form floating button */
+  .add-new-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 65px;
+    width: 62px;
+    background: blue;
+    padding: 20px 20px;
+    top: 200px;
+    right: 10%;
+    text-align: center;
+    color: white;
+    z-index: 998;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+    border-bottom-width: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .close-new-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 65px;
+    width: 62px;
+    background: red;
+    padding: 20px 20px;
+    top: 200px;
+    right: 10%;
+    text-align: center;
+    color: white;
+    z-index: 998;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+    border-bottom-width: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .add-new-btn i{
+    display: flex;
+    align-items: center;
+    float: center;
+    font-size: 180%;  
+  }
+  .close-new-btn i{
+    display: flex;
+    align-items: center;
+    float: center;
+    font-size: 180%       
+  }
+  .add-new-btn :hover:not(i){
+     filter: brightness(90%);
+     transform: scale(0.8);
+  }
+  .close-new-btn :hover:not(i){
+     filter: brightness(90%);
+     transform: scale(0.8);
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 750px) {
+    .add-new-btn {
+      margin-bottom: 200px;
+    }
+    .close-new-btn {
+      margin-bottom: 200px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .add-new-btn {
+      bottom: 15px;
+      height: 38px;
+      width: 35px;
+      font-size: 23px;
+      line-height: 38px;
+    }
+    .close-new-btn {
+      bottom: 15px;
+      height: 38px;
+      width: 35px;
+      font-size: 23px;
+      line-height: 38px;
+    }
+  }

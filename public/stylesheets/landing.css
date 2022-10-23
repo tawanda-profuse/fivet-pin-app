@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+  
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    color:lime;
+    line-height:1.6;
+  }
+  
+  #showcase{
+    background-image:url('https://hotraco-group.imgix.net/assets/Agri/Pages/Poultry/Feed-water/Poultry-Solutions-Feed-water-Header-1.png?auto=compress%2Cformat&fit=clip&h=1080&q=60&w=1920&s=61f26d40cda129072a6d7ec938f5982f');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+  #showcase h1{
+    font-size: 100px;
+    line-height:1.2;
+    margin-bottom: 100px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+    font-weight: bold;
+    z-index: 2;
+    color: blue;
+    text-shadow: 1px 1px 0px blue;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  
+  #showcase .button{
+    font-size:18px;
+    font-weight: bold;
+    text-decoration:none;
+    color:white;
+    border:blue 5px solid;
+    background:blue;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+  }
+  #showcase .button:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+  }
+  #showcase .pin:hover::after {
+    position: absolute;
+    content: "📌";
+  }
+  #showcase .count:hover::after {
+    position: absolute;
+    content: "⏰";
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    #showcase h1{
+      font-size: 60px;
+    }  
+  }
+  @media screen and (min-width: 280px) and (max-width: 319px) {
+    #showcase h1{
+      font-size: 50px;
+    } 
+  }
+  
