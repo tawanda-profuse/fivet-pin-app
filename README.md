@@ -29,10 +29,10 @@ This application is hosted on Heroku as a Node.js dyno with GitHub continuous de
 
 |Scenario|Expected Result|Latest Result|Automated|
 |:---:|:---:|:---:|:---:|
-|Spinning up the express server|The application should run in the intended environment|The application runs|Installed the **nodemon** npm package|
+|Spinning up the express server|The application should run in the intended environment|The application runs successfully ✅|Installed the **nodemon** npm package|
 |Accessing different routes|**200 OK** response|All pages are accessible ✅|Defined a route file with JavaScript|
-|Adding a new item to pages|The items should render and save in MongoDB|All items render|Express has access to all routes in **server.js**|
-|Removing an item from page 1 & 2|The item should disappear and delete from MongoDB|The items delete from database|Defined a route to handle this request|
-|Unpinning an item from dashboard|The item should disappear|Server response: **cannot post to /dashboard** ❌|N/A|
-|Accessing links to external pages|The page should render|The page displays properly|Added relevant **href** attribute to anchor tags|
-|Opening and closing form|The form should display and disappear respectively|The buttons act as expected|Toggle the elements **classList** (/public/javascripts/nav.js)|
+|Adding a new item to pages|The items should render and save in MongoDB|All items render ✅|Express has access to all routes in **server.js**|
+|Removing an item from page 1 & 2|The item should disappear and delete from MongoDB|The items are removed from the database ✅|Defined a route to handle this request|
+|Unpinning an item from dashboard|The item should disappear|The item is unpinned from the dashboard ✅|N/A|
+|Accessing links to external pages|The page should render|The page displays properly ✅|Added relevant **href** attribute to anchor tags|
+|Opening and closing form|The form should display and disappear respectively|The buttons act as expected ✅|Toggle the elements **classList** (/public/javascripts/nav.js)|
