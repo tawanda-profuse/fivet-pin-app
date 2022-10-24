@@ -5,7 +5,7 @@
 <div class="book-grid <%= bookGridClass %>">
   <% pins.forEach(pin => { %>
     <div class="page-item" style="background-color: <%=pin.color%>">
-    <form href="/dashboard/<%= pin.id %>?_method=DELETE" method="POST">
+    <form action="/dashboard/<%= pin.id %>?_method=DELETE" method="POST">
       <button title="Unpin this item" type="submit"><%= pin.item_name %></button>
     </form>
     <p><%= pin.page_name %></p>

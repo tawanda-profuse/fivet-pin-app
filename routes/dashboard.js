@@ -18,7 +18,7 @@ router.get('/pins', async (req, res) => {
 // Route to unpin an item from dashboard
 router.delete('/:id', async (req, res) => {
   await Pin.findByIdAndDelete(req.params.id);
-  res.redirect('/');
+  res.redirect('/dashboard/pins');
 });
 
 module.exports = router;

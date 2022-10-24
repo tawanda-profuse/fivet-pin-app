@@ -1,11 +1,11 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.nav');
-var openForm = document.querySelector('#open-form');
-var form = document.querySelector('#new-form');
-var closeForm = document.querySelector('#close-form');
-var pushToDb = document.querySelector('#pushDb');
-var user_Message = document.querySelector('#userMessage');
-var item_Name = document.querySelector('#itemName');
+let openForm = document.querySelector('#open-form');
+let form = document.querySelector('#new-form');
+let closeForm = document.querySelector('#close-form');
+let pushToDb = document.querySelector('#pushDb');
+let user_Message = document.querySelector('#userMessage');
+let item_Name = document.querySelector('#itemName');
 
 openForm.addEventListener('click', function(){
     form.classList.remove('hide');
